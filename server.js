@@ -24,14 +24,15 @@ var handler = function(request, response) {
     });
 };
 
+var port = process.env.PORT || g.config.server.port;
 var srv = http.createServer(handler);
 
-srv.listen(g.config.server.port);
+srv.listen(port);
 
-g.log('Open browser to http://127.0.0.1:' + g.config.server.port);
-g.log('Starting WS server on ' + g.config.server.port);
+g.log('Open browser to http://127.0.0.1:' + port);
+g.log('Starting WS server on ' + port);
 
-var ws = srv.listen(g.config.server.port);
+var ws = srv.listen(port);
 var conn = sio.listen(ws, { log: false });
 
 conn.sockets.on('connection', function (socket) {

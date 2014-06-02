@@ -25,5 +25,7 @@ Graffeine.conf.graphSettings = {
 };
 
 Graffeine.conf.core = {
-    host: 'http://fnet-innovision.herokuapp.com' // where the node.js server be at
+    // where the node.js server be at
+    //host: process.env.NODE_ENV === 'production' ? process.env.PRODUCTION_URL : 'http://127.0.0.1:8004'
+    host: 'http://127.0.0.1:8004'
 };

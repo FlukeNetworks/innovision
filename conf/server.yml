@@ -2,3 +2,4 @@
 nodejs:
 
     port: 8004
+    sslport: 8444

@@ -32,15 +32,9 @@
     "js-yaml": "~2.1.0",
     "neo4j": "~0.2.20",
     "node-static": "~0.6.9",
-    "socket.io": "~0.9.14"
+    "socket.io": "~0.9.14",
+    "express": "~3.5.0"
   },
-  "bundledDependencies": [
-    "d3",
-    "js-yaml",
-    "neo4j",
-    "node-static",
-    "socket.io"
-  ],
   "devDependencies": {},
   "license": "LGPL-3.0"
 }
